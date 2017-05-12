@@ -16,6 +16,13 @@
     
     Begin_Com Role(*EXTENDS #PRIM_OBJT)
     
-    Define_Pty Name(ACME_FrameworkName)
+    Define_Pty Name(ACME_FrameworkName) Get(getACME_FrameworkName)
+    
+    Ptyroutine Name(getACME_FrameworkName)
+    Define_Map For(*output) Class(#PRIM_ALPH) Name(#ACME_FrameworkName)
+    
+    
+    
+    Endroutine
     
     End_Com
