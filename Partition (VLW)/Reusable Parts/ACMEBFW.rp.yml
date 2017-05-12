@@ -1,0 +1,21 @@
+﻿Reusable Part:
+  Name:               ACME_BaseFramework
+  Enabled For RDMLX:  Yes
+  Target Platform:    Browser
+
+  Framework:
+    Id1:                10240
+    Id2:                30
+
+  Multilingual Details:
+  - ENG:
+      Description:        "ACME_Base_Framework"
+
+  Source: |
+    Function Options(*DIRECT)
+    
+    Begin_Com Role(*EXTENDS #PRIM_OBJT)
+    
+    Define_Pty Name(ACME_FrameworkName)
+    
+    End_Com
